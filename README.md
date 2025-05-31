@@ -98,16 +98,6 @@ export hysteria2.
 
 [libXray](https://github.com/XTLS/libXray/)
 
-# MISC
-
-I offer professional development services for custom  VPN and proxy client applications. Whether you need a complete solution from scratch or integration with existing systems, I can help bring your vision to life. My expertise includes:
-
-- Custom VPN client development
-- Proxy client implementation
-- Network security solutions
-- Performance optimization
-- Security hardening
-
 For professional inquiries, please contact me on Telegram: [@codewithtamim](https://t.me/codewithtamim)
 
 # License
