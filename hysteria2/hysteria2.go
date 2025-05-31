@@ -15,13 +15,12 @@ var (
 	disableUpdateCheck bool = true
 )
 
-// init initializes the logger when the package is loaded
-func init() {
-	// Initialize logger with development config for better readability
+ func init() {
+	 
 	var err error
 	logger, err = zap.NewDevelopment()
 	if err != nil {
-		// Fallback to production logger if development fails
+		 
 		logger, _ = zap.NewProduction()
 	}
 	if logger != nil {
@@ -29,8 +28,7 @@ func init() {
 	}
 }
 
-// StartTunnel starts the Hysteria2 tunnel with the given JSON configuration
-func StartTunnel(configJson string) {
+ func StartTunnel(configJson string) {
 	if logger != nil {
 		logger.Info("Starting Hysteria2 tunnel")
 	}
@@ -67,8 +65,7 @@ func StartTunnel(configJson string) {
 	}
 }
 
-// StopTunnel stops the currently running Hysteria2 tunnel
-func StopTunnel() {
+ func StopTunnel() {
 	if logger != nil {
 		logger.Info("Stopping Hysteria2 tunnel")
 	}
@@ -82,13 +79,11 @@ func StopTunnel() {
 	isCoreRunning = false
 }
 
-// GetCoreState returns whether the Hysteria2 core is currently running
-func GetCoreState() bool {
+ func GetCoreState() bool {
 	return isCoreRunning
 }
 
-// TestConfig validates a Hysteria2 configuration without starting the tunnel
-func TestConfig(configJson string) error {
+ func TestConfig(configJson string) error {
 	var config clientConfig
 	if err := json.Unmarshal([]byte(configJson), &config); err != nil {
 		return err
