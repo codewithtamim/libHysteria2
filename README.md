@@ -98,8 +98,6 @@ export hysteria2.
 
 [libXray](https://github.com/XTLS/libXray/)
 
-For professional inquiries, please contact me on Telegram: [@codewithtamim](https://t.me/codewithtamim)
-
 # License
 
 This repository is based on the MIT License.
