@@ -4,6 +4,9 @@
 
 This is a wrapper around [Hysteria2](https://github.com/apernet/hysteria) to improve the client development experience.
 
+> [!NOTE]
+> Moved to [TheByteArray/libHysteria2](https://github.com/thebytearray/libHysteria2)
+
 # Note
 
 1. This repository has few maintainers. If you do not report a bug or initiate a PR, your issue will be ignored.
